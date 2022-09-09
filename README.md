@@ -39,8 +39,8 @@ You should be able to:
 
 ### Links
 
-- Solution URL: [solution](https://github.com/HDanielO/Calculator-App)
-- Live Site URL: [live site]( https://hdanielo.github.io/Calculator-App/)
+- [Solution URL](https://github.com/HDanielO/Calculator-App)
+- [Live Site URL]( https://calculator-app-gilt.vercel.app/)
 
 ## My process
 
