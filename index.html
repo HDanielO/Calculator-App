@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
+  <title>Frontend Mentor | Calculator app | Challenge done by Hameed Daniel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">  
+
+<div class="calculator">
+<div class="top" id="top">
+  <p id="calc">calc</p>
+  <div class="theme">
+    <p>THEME</p>
+    <div class="toggle" >
+      <div class="tog_num">
+        <p onclick="normalMode()">1</p>
+        <p onclick="lightMode()">2</p>
+        <p onclick="darkMode()">3</p>
+      </div>
+      <div class="btn" id="btn">
+        <div class="tog_btn btn_1" onclick="normalMode()" id="btn_1"></div>
+        <div class="tog_btn btn_2" onclick="lightMode()" id="btn_2"></div>
+        <div class="tog_btn btn_3" onclick="darkMode()" id="btn_3"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="result" id="result"></div>
+
+<div class="buttons" id="buttons">
+  <button class="numbers" id="numbers" onclick="display(7)">7</button>
+  <button class="numbers" id="numbers" onclick="display(8)">8</button>
+  <button class="numbers" id="numbers" onclick="display(9)">9</button>
+  <button class="delete" id="delete" onclick="delt()">DEL</button>
+  <button class="numbers" id="numbers" onclick="display(4)">4</button>
+  <button class="numbers" id="numbers" onclick="display(5)">5</button>
+  <button class="numbers" id="numbers" onclick="display(6)">6</button>
+  <button class="numbers" id="numbers" onclick="display('+')">+</button>
+  <button class="numbers" onclick="display(1)" id="numbers">1</button>
+  <button class="numbers" onclick="display(2)" id="numbers">2</button>
+  <button class="numbers" onclick="display(3)" id="numbers">3</button>
+  <button class="numbers" onclick="display('-')" id="numbers">-</button>
+  <button class="numbers" onclick="display('.')" id="numbers">.</button>
+  <button class="numbers" onclick="display(0)" id="numbers">0</button>
+  <button class="numbers" onclick="display('/')" id="numbers">/</button>
+  <button class="numbers" onclick="display('*')" id="numbers">x</button>
+  <button class="reset" onclick="rst()" id="reset">RESET</button>
+  <button class="equal" onclick="eva()" id="equal">=</button>
+</div>
+
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Hameed Daniel</a>.
+  </div>
+  <script src="/script.js"></script>
+</body>
+</html>

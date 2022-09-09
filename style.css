@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: rgb(196, 52, 0);
+}
+.attribution a {
+  color: rgb(38, 172, 65);
+}
+
+body {
+  background-color: hsl(222, 26%, 31%);
+}
+
+.calculator {
+  width: 450px;
+  margin: 5% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-weight: 700;
+}
+
+#calc {
+  font-size: 1.5rem;
+}
+
+.theme {
+  display: flex;
+  gap: 1.25em;
+  align-items: center;
+}
+
+.theme > p {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+}
+
+.toggle {
+  display: flex;
+  flex-direction: column;
+  width: 4em;
+  align-items: center;
+  gap: 0.2em;
+}
+
+.tog_num {
+  width: 80%;
+  display: flex;
+  font-size: 0.6rem;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.btn {
+  width: 100%;
+  background-color: hsl(223, 31%, 20%);
+  padding: 0.15em;
+  border-radius: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tog_btn {
+  padding: 0.4em;
+  border-radius: 50%;
+  background-color: orangered;
+  cursor: pointer;
+}
+
+.btn_2,
+.btn_3 {
+  background-color: hsl(223, 31%, 20%);
+}
+
+.result {
+  width: 100%;
+  height: 5rem;
+  padding: 0.6em 0.2em;
+  border-radius: 0.3em;
+  background-color: hsl(222, 30%, 16%);
+  color: white;
+  font-weight: 700;
+  text-align: right;
+  font-size: 2.5em;
+  line-height: 1em;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.buttons {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 20%);
+  justify-content: space-evenly;
+  row-gap: 0.7em;
+  background-color: hsl(222, 30%, 16%);
+  border-radius: 0.7em;
+  padding: 0.7em 0.1em;
+}
+
+.numbers {
+  background-color: hsl(30, 25%, 89%);
+  border: none;
+  outline: none;
+  border-radius: 0.4em;
+  box-shadow: 0px 4px hsl(40, 1%, 58%);
+  font-weight: 700;
+  font-size: 1.5em;
+  color: hsl(221, 14%, 31%);
+  padding: 0.3em;
+  cursor: pointer;
+}
+
+.numbers:hover,
+.numbers:active {
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0px 3px hsl(40, 1%, 58%);
+}
+
+.delete {
+  background-color: hsl(225, 21%, 49%);
+  border: none;
+  outline: none;
+  border-radius: 0.4em;
+  box-shadow: 0px 5px hsl(224, 28%, 35%);
+  font-weight: 700;
+  font-size: 1.5em;
+  color: white;
+  cursor: pointer;
+}
+
+.reset {
+  grid-column: 1/3;
+  font-weight: 700;
+  font-size: 1.5em;
+  padding: 0.3em;
+  border: none;
+  outline: none;
+  border-radius: 0.4em;
+  color: white;
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: 0px 5px hsl(224, 28%, 35%);
+  cursor: pointer;
+}
+
+.delete:hover,
+.delete:active,
+.reset:hover,
+.reset:active {
+  background-color: hsl(225, 67%, 74%);
+  box-shadow: 0px 3px hsl(224, 28%, 35%);
+}
+
+.equal {
+  grid-column: 3/5;
+  font-weight: 700;
+  font-size: 2em;
+  padding: 0.3em;
+  border: none;
+  outline: none;
+  border-radius: 0.4em;
+  color: white;
+  background-color: hsl(6, 63%, 50%);
+  box-shadow: 0px 5px hsl(6, 70%, 34%);
+  cursor: pointer;
+}
+
+.equal:hover,
+.equal:active {
+  background-color: hsl(6, 94%, 69%);
+  box-shadow: 0px 3px hsl(6, 70%, 34%);
+}
+
+/* MEDIA QUERY FOR RESPONSIVENESS */
+
+@media (max-width: 600px) {
+  .calculator {
+    width: 90vw;
+  }
+}
+
+/* THEME 2 STYLING */
+
+.theme_2_body {
+  background-color: hsl(0, 11%, 91%);
+}
+
+.theme_2_top {
+  color: hsl(60, 10%, 19%);
+}
+
+.theme_2_btn {
+  background-color: hsl(0, 2%, 74%);
+}
+
+.theme_2_btn_2 {
+  padding: 0.4em;
+  border-radius: 50%;
+  background-color: orangered;
+  cursor: pointer;
+}
+
+.theme_2_btn_1,
+.theme_2_btn_3 {
+  background-color: hsl(0, 2%, 74%);
+}
+
+.theme_2_result {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(60, 10%, 19%);
+}
+
+.theme_2_buttons {
+  background-color: hsl(0, 2%, 74%);
+}
+
+.theme_2_numbers,
+.theme_2_numbers:active,
+.theme_2_numbers:hover {
+  background-color: hsl(45, 7%, 89%);
+}
+
+.theme_2_delete,
+.theme_2_delete:hover,
+.theme_2_delete:active {
+  background-color: hsl(185, 42%, 37%);
+}
+
+.theme_2_equal {
+  background-color: hsl(25, 98%, 40%);
+}
+
+.theme_2_equal:hover,
+.theme_2_equal:active {
+  background-color: hsl(25, 79%, 55%);
+}
+
+/* ****************** */
+
+/* THEME 3 STYLING */
+
+.theme_3_body {
+  background-color: hsl(268, 75%, 9%);
+}
+
+.theme_3_top {
+  color: hsl(52, 100%, 62%);
+}
+
+.theme_3_btn {
+  background-color: hsl(268, 71%, 12%);
+}
+
+.theme_3_btn_3 {
+  padding: 0.4em;
+  border-radius: 50%;
+  background-color: orangered;
+  cursor: pointer;
+}
+
+.theme_3_btn_1,
+.theme_3_btn_2 {
+  background-color: hsl(268, 71%, 12%);
+}
+
+.theme_3_result {
+  background-color: hsl(268, 71%, 12%);
+  color: hsl(52, 100%, 62%);
+}
+
+.theme_3_buttons {
+  background-color: hsl(268, 71%, 12%);
+}
+
+.theme_3_numbers,
+.theme_3_numbers:active,
+.theme_3_numbers:hover {
+  background-color: hsl(281, 89%, 26%);
+  color: hsl(52, 100%, 62%);
+  box-shadow: 0px 4px hsl(285, 91%, 52%);
+}
+
+.theme_3_delete,
+.theme_3_delete:active,
+.theme_3_delete:hover {
+  background-color: rgb(134, 49, 176);
+  color: hsl(52, 100%, 62%);
+  box-shadow: 0px 4px hsl(285, 91%, 52%);
+}
+
+.theme_3_equal {
+  background-color: hsl(176, 100%, 44%);
+  box-shadow: 0px 5px hsl(177, 92%, 70%);
+  color: hsl(198, 20%, 13%);
+}
+
+.theme_3_equal:hover,
+.theme_3_equal:active {
+  background-color: hsl(176, 100%, 44%);
+  box-shadow: 0px 5px hsl(177, 92%, 70%);
+}
+/* ***************** */
